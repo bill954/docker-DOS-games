@@ -1,0 +1,31 @@
+version: "3"
+services:
+        doom:
+                build: docker-games/game_build_files/doom/.
+                ports:
+                        - "81:8000"
+
+        keen:
+                build: docker-games/game_build_files/keen/.
+                ports:
+                        - "82:8000"
+
+        cosmo:
+                build: docker-games/game_build_files/cosmo/.
+                ports:
+                        - "83:8000"
+
+        secretagent:
+                build: docker-games/game_build_files/secretagent/.
+                ports:
+                        - "84:8000"
+
+        mario:
+                build: docker-games/game_build_files/mariohtml5-master/.
+                ports:
+                        - "85:8080"
+
+        web:
+                build: docker-games/web_server/debian-nginx-11.21.4/.
+                ports: 
+                        - "80:80"

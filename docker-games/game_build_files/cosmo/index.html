@@ -1,5 +1,5 @@
 <html>
-  <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css" media="screen">
       canvas {
           width: 800px;
@@ -8,16 +8,31 @@
           background-color: #f1f1f1;
           position:relative;
           margin:auto;
-      }
+          border-radius:10px;
+          }
   </style>
   <head>
     <title>DOS Game Docker Container Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <script src="js-dos.js"></script>
   </head>
   <body>
-    <!---GAME CONTAINER SITE V1 CANVAS POSITION: CENTER--->
-    <div class="container-fluid" style="background:#778ba5; align-content: center; height:950px;">
-    <p style="color:white; padding-top:10px; text-align:center"> Game Container </p>
+    <div class="container-fluid" style="
+    background: linear-gradient(#66ccff 30%,#666699);
+    height:100%;
+    padding:10px;">
+      <div class="container" style="
+      width:800px;
+      background:#f1f1f1;
+      border:1px solid #d3d3d3;
+      border-radius:10px;
+      margin-bottom:10px;">
+      <div class="text-center p-2" style="font-size:1.5em">
+        Game Container
+      </div>
+      </div>
+    <!---GAME CONTAINER SITE V2 CANVAS POSITION: CENTER--->
     <p align="center">
       <canvas id="jsdos" width="800" height="600"></canvas>
       <script>
@@ -28,6 +43,25 @@
           });
         });
       </script>
+      <div class="container" style="
+      width:800px;
+      background:#f1f1f1;
+      border:1px solid #d3d3d3;
+      border-radius:10px;">
+      <div class="row" style="align:center;padding:10px">
+        <div class="col-sm text-center">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/bill954/docker-project"> Docker Project </a>
+        </div>
+        <div class="col-sm text-center">
+          UNSAM ECyT 2C 2021
+        </div>
+        <div class="col-sm text-center">
+          <i class="fab fa-github-alt"></i> <a href="https://github.com/bill954">bill954</a>
+          <i class="fab fa-github-alt"></i> <a href="https://github.com/eliasdrid">eliasdrid</a>
+        </div>
+      </div>
+    </div>
     </p>
     </div>
   </body>

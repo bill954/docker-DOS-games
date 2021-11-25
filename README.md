@@ -33,10 +33,10 @@ While there's a game launcher website to redirect you to each game, you can also
 | Infinite Mario Bros | 86  |
 
 # Do you want to host the containers to let others play on them?
-- You need to open the :80 port on your router and redirect them to the port :80 in your pc. (It's different in every router, you need to find this info yourself)
-- Get your router public IP.
-- Run this command:
+- You need to open the ports 80 to 86 on your router and redirect them to the ports 80 to 86 in your pc. (It's different in every router, you need to find how to do it with yours)
+- Get your router public IP (if you don't know it, ask google).
+- Open a terminal in the main directory of this repo and run this command:
 ```
 $: sed -i 's/localhost/your_router_ip/g' docker-games/web_server/debian-nginx-11.21.4/html/index.html
 ```
-- Done! Next time you run docker-compose up you can access by going to your router's IP on a browser on any other PC.
+- Done! Next time you run ```docker-compose up``` you can access by going to your router's IP on a browser on any other PC.

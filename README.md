@@ -3,11 +3,11 @@ The current objective of this project is to use Docker containers to host differ
 
 __To do things:__
 - ~~Create another container to host a static webpage that will redirect to any of these games.~~
-- Finish the static sample webpage and customize each instance.
+- ~~Finish the static sample webpage and customize each instance.~~
 - ~~write a docker-compose.yml file to run all the containers at once.~~
 - ~~docker-compose written but still unfinished. We need to add lines to the .yml to copy the main page .html inside the web container.~~
 
-Optional objectives (we're not doing these but just in case we have that much time'):
+__Optional objectives (we're not doing these but just in case we have that much time'):__
 - Add more games
 - Make docker-compose able to run in an Azure Container Instance.
 

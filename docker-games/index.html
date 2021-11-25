@@ -1,4 +1,5 @@
 <html>
+  <!---METADATA, CSS, SOURCES--->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css" media="screen">
       canvas {
@@ -17,7 +18,9 @@
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <script src="js-dos.js"></script>
   </head>
+  <!---WEBSITE--->
   <body>
+    <!---MAIN CONTAINER--->
     <div class="container-fluid" style="
     background: linear-gradient(#66ccff 30%,#666699);
     height:100%;
@@ -28,11 +31,11 @@
       border:1px solid #d3d3d3;
       border-radius:10px;
       margin-bottom:10px;">
-      <div class="text-center p-2" style="font-size:1.5em">
-        Game Container
+        <div class="text-center p-2" style="font-size:1.5em; font-variant:small-caps">
+          Game Container
+        </div>
       </div>
-      </div>
-    <!---GAME CONTAINER SITE V2 CANVAS POSITION: CENTER--->
+    <!---GAME CONTAINER 800x600, POSITION: CENTER--->
     <p align="center">
       <canvas id="jsdos" width="800" height="600"></canvas>
       <script>
@@ -43,25 +46,26 @@
           });
         });
       </script>
+      <!---FOOTER--->
       <div class="container" style="
       width:800px;
       background:#f1f1f1;
       border:1px solid #d3d3d3;
       border-radius:10px;">
-      <div class="row" style="align:center;padding:10px">
-        <div class="col-sm text-center">
-          <i class="fab fa-github"></i>
-          <a href="https://github.com/bill954/docker-project"> Docker Project </a>
-        </div>
-        <div class="col-sm text-center">
-          UNSAM ECyT 2C 2021
-        </div>
-        <div class="col-sm text-center">
-          <i class="fab fa-github-alt"></i> <a href="https://github.com/bill954">bill954</a>
-          <i class="fab fa-github-alt"></i> <a href="https://github.com/eliasdrid">eliasdrid</a>
+        <div class="row" style="align:center;padding:10px">
+          <div class="col-sm text-center">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/bill954/docker-project"> Docker Project </a>
+          </div>
+          <div class="col-sm text-center">
+            UNSAM ECyT 2C 2021
+          </div>
+          <div class="col-sm text-center">
+            by <i class="fab fa-github-alt"></i> <a href="https://github.com/bill954">bill954</a>,
+            <i class="fab fa-github-alt"></i> <a href="https://github.com/eliasdrid">eliasdrid</a>
+          </div>
         </div>
       </div>
-    </div>
     </p>
     </div>
   </body>

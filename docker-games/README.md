@@ -1,3 +1,4 @@
 # Game Files
-The game_build_files folder has folders inside, each with a dockerfile that sets up a container image for each game. Each dockerfile downloads the .zip that contains the DOS game from the web (except Mario, which works differently).
-The compressed_games folder holds copies of each game's .zip file. These .zip are not being used now, but they're still here to used in case some of the download link is down or we decide to load the games locally.
+This folder contains:
+- game_build_files which contains folders inside, each with its own `.Dockerfile` that sets up a container image for each individual game listed. Each `.Dockerfile` downloads a compressed .zip file (except in the case of Infinite Mario Bros) which can be found in the compressed_games folder
+- compressed_games holds copies of each of the games' compressed .zip files, these links are not currently being used for download but are here in case a download link goes down or in case you'd like to load the game locally.

@@ -25,12 +25,12 @@ $: docker-compose up
 $: docker-compose down
 ```
 For now, there's no main website to redirect you to each game, so you'll only be able to access each one by going to:
-| Game | `localhost:` |
+| Game | localhost: |
 | ------------- | ------------- |
-| Sample Website (empty) | `80`  |
-| Doom | `81`  |
-| Keen | `82`  |
-| Cosmo | `83`  |
-| Secret Agent | `84`  |
-| Prince of Persia | `85`  |
-| Infinite Mario Bros | `86`  |
+| Sample Website (empty) | 80  |
+| Doom | 81  |
+| Keen | 82  |
+| Cosmo | 83  |
+| Secret Agent | 84  |
+| Prince of Persia | 85  |
+| Infinite Mario Bros | 86  |

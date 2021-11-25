@@ -16,11 +16,16 @@ __Optional objectives (currently not working on these but maybe someday):__
 # Instructions:
 - Clone or download this repository to your PC.
 - Install docker and docker-compose, you can find the official docker instructions here: https://docs.docker.com
-- Open a Terminal in this directory (path/docker-project) and run:
+- Open a Terminal in the main directory of this repo and run:
 ```
-$: docker-compose up
+$: docker-compose up -d
 ```
 - This will download files, build images for the containers, and get them all running. Note: This could take a while the first time, depending on what docker images you already have downloaded in your computer and your internet speed. Next times will take considerably less.
+
+- To stop all the containers at once, while on the same directory, run:
+```
+$: docker-compose down
+```
 
 While there's a game launcher website to redirect you to each game, you can also reach them by going to:
 | Game | localhost: |

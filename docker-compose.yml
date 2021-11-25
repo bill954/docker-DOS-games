@@ -34,3 +34,5 @@ services:
                 build: docker-games/web_server/debian-nginx-11.21.4/.
                 ports: 
                         - "80:80"
+                volumes:
+                        - ./docker-games/web_server/debian-nginx-11.21.4/html:/usr/share/nginx/html/:cached

@@ -25,4 +25,12 @@ $: docker-compose up
 $: docker-compose down
 '''
 
+For now, there still no main website, so you will be able to access each game by going to:
 
+Main website: localhost:80 (only an empty website but it's there to check it's working ok)
+Doom: localhost:81
+Keen: localhost:82
+Cosmo: localhost:83
+Secret Agent: localhost:84
+Prince of Persia: localhost:85
+Mario: localhost:86

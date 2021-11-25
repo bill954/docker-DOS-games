@@ -12,6 +12,7 @@ __Done:__
 __Optional objectives (currently not working on these but maybe someday):__
 - Add more games.
 - Make docker-compose able to run in an Azure Container Instance.
+- Make html mobile friendly.
 
 # Instructions:
 - Clone or download this repository to your PC.

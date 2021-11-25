@@ -1,5 +1,7 @@
 # docker-project
 
+<img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png?itok=sYH_JEaJ" width="250px">
+
 The current objective of this project is to use Docker containers to host different games and make them playable from any local web browser.
 
 __Done:__

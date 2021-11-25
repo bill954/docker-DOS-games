@@ -7,8 +7,9 @@ __Done:__
 - Static launcher game website, which links to all games. ✔
 - NGINX Web Server support. ✔
 - docker-compose.yml file written to run all containers at once. ✔
+- You can now host containers so others can access them online. ✔
 
-__Optional objectives (we're not doing these but just in case we have that much time'):__
+__Optional objectives (currently not working on these but maybe someday):__
 - Add more games.
 - Make docker-compose able to run in an Azure Container Instance.
 
@@ -33,10 +34,10 @@ While there's a game launcher website to redirect you to each game, you can also
 | Infinite Mario Bros | 86  |
 
 # Do you want to host the containers to let others play on them?
-- You need to open the ports 80 to 86 on your router and redirect them to the ports 80 to 86 in your pc. (It's different in every router, you need to find how to do it with yours)
-- Get your router public IP (if you don't know it, ask google).
-- Open a terminal in the main directory of this repo and run this command:
+- You need to open the ports 80 to 86 on your route and redirect them to the ports 80 to 86 in your PC. Since this must be done differently in every router, you will have to search for instructions that apply to yours especifically.
+- You also need your public IP address. You can do that here: https://www.whatismyip.com/what-is-my-public-ip-address/
+- Now, you need to open a terminal in the main directory of this repository and run this command:
 ```
 $: sed -i 's/localhost/your_router_ip/g' docker-games/web_server/debian-nginx-11.21.4/html/index.html
 ```
-- Done! Next time you run ```docker-compose up``` you can access by going to your router's IP on a browser on any other PC.
+- And that's it! Next time you run ```docker-compose up``` you can access the games by going to your public IP on a browser on any other PC.

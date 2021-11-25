@@ -14,6 +14,13 @@
           border-radius:10px;
           }
   </style>
+  <style>
+  * { padding: 0; margin: 0; }
+  html, body, #fullheight {
+      min-height: 100%;
+      height: 100%;
+  }
+  </style>
   <head>
     <title>DOS Game Docker Container Project</title>
     <!---BOOTSRAP & FONTAWESOME--->
@@ -24,7 +31,7 @@
   <!---WEBSITE--->
   <body>
     <!---MAIN CONTAINER--->
-    <div class="container-fluid" style="
+    <div id="fullheight" style="
     background: linear-gradient(#80a8f8 30%,#b8c8f8);
     height:100%;
     padding:10px;">

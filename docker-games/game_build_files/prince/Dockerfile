@@ -8,11 +8,13 @@ RUN wget https://js-dos.com/6.22/current/js-dos.js && \
 
 RUN npm install -g serve
 
-ENV GAME_URL=https://image.dosgamesarchive.com/games/keen-shr.zip
-RUN wget -O game.zip $GAME_URL
+#ENV GAME_URL=https://
+#RUN wget -O game.zip $GAME_URL
 
-ENV GAME_ARGS=\"KEEN.BAT\"
-COPY index.html .
+COPY ./prince_of_persia.zip game.zip
+
+ENV GAME_ARGS=\"PRINCE.EXE\"
+COPY html/index.html .
 RUN sed -i s/GAME_ARGS/$GAME_ARGS/ index.html
 
 ENTRYPOINT npx serve -l tcp://0.0.0.0:8000

@@ -20,10 +20,15 @@ services:
                 ports:
                         - "84:8000"
 
+        prince:
+                build: docker-games/game_build_files/prince/.
+                ports:
+                        - "85:8000"
+
         mario:
                 build: docker-games/game_build_files/mariohtml5-master/.
                 ports:
-                        - "85:8080"
+                        - "86:8080"
 
         web:
                 build: docker-games/web_server/debian-nginx-11.21.4/.

@@ -12,7 +12,7 @@ ENV GAME_URL=https://archive.org/download/SecretAgent_945/AGENT.ZIP
 RUN wget -O game.zip $GAME_URL
 
 ENV GAME_ARGS=\"SAM1.EXE\"
-COPY index.html .
+COPY html/index.html .
 RUN sed -i s/GAME_ARGS/$GAME_ARGS/ index.html
 
 ENTRYPOINT npx serve -l tcp://0.0.0.0:8000

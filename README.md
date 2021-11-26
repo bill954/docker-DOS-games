@@ -41,11 +41,11 @@ While there's a game launcher website to redirect you to each game, you can also
 | Prince of Persia | 85  |
 | Infinite Mario Bros | 86  |
 
-# Do you want to host the containers to let others play on them?
+# Do you want to host the containers and let your friends play them?
 - You need to open the ports 80 to 86 on your route and redirect them to the ports 80 to 86 in your PC. Since this must be done differently in every router, you will have to search for instructions that apply to yours especifically.
 - You also need your public IP address. You can do that here: https://www.whatismyip.com/what-is-my-public-ip-address/
-- Now, you need to open a terminal in the main directory of this repository and run this command:
+- Open a terminal in the main directory of this repository and run this command line replacing ```public_ip``` with your router's public IP:
 ```
-$: sed -i 's/localhost/your_router_ip/g' docker-games/web_server/debian-nginx-11.21.4/html/index.html
+$: sed -i 's/localhost/public_ip/g' docker-games/web_server/debian-nginx-11.21.4/html/index.html
 ```
-- And that's it! Next time you run ```docker-compose up``` you can access the games by going to your public IP on a browser on any other PC.
+- And that's it! Next time you run ```docker-compose up``` the main website and the games will be available online, just open your web browser and go to your IP address on any computer with internet connection (mobile devices are not supported).

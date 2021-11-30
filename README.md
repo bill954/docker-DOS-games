@@ -1,4 +1,4 @@
-# docker-project
+# docker-DOS-games
 
 <img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png?itok=sYH_JEaJ" width="250px">
 
@@ -42,7 +42,7 @@ While there's a game launcher website to redirect you to each game, you can also
 | Infinite Mario Bros | 86  |
 
 # Do you want to host the containers and let your friends play the games on them?
-- You need to open the ports 80 to 86 on your route and redirect them to the ports 80 to 86 in your PC. Since this must be done differently in every router, you will have to search for instructions that apply to yours especifically.
+- You need to open the ports 80 to 86 on your router and redirect them to the ports 80 to 86 in your PC. Since this must be done differently in every router, you will have to search for instructions that apply to yours especifically.
 - You also need your public IP address. You can do that here: https://www.whatismyip.com/what-is-my-public-ip-address/
 - Open a terminal in the main directory of this repository and run this command line replacing ```public_ip``` with your router's public IP:
 ```
